@@ -1,4 +1,4 @@
-![FastPush Screenshot](https://d1wiki.vercel.app/assets/fastpush.png)
+![FastPush Logo](assets/logo.png)
 
 
 أداة بسيطة لتسهيل عمليات **git commit** و **git push** بسرعة من خلال سطر الأوامر.
