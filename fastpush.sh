@@ -1,7 +1,3 @@
-
-
-# ========== fastpush ==========
-
 ascii_logo() {
 cat << "EOF"
           ░█▀▀░█▀█░█▀▀░▀█▀░░░█▀█░█░█░█▀▀░█░█
@@ -24,17 +20,17 @@ check_dep node
 check_dep npm
 
 if [ ! -d .git ]; then
-  echo "fill not connected to repo "
-  git init
+  echo "repo not connected, initializing..."
+  git init >/dev/null 2>&1
 
   read -p "username/repo: " repo
-  git remote add origin "https://github.com/$repo/"
+  git remote add origin "https://github.com/$repo/" >/dev/null 2>&1
 
   read -p "branch: " branch
-  git branch -M "$branch"
+  git branch -M "$branch" >/dev/null 2>&1
 fi
 
-git add .
+git add . >/dev/null 2>&1
 read -p "commit: " msg
-git commit -m "$msg"
-git push origin "$(git branch --show-current)" --force
+git commit -m "$msg" >/dev/null 2>&1
+git push origin "$(git branch --show-current)" --force >/dev/null 2>&1
