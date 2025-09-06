@@ -37,4 +37,4 @@ fi
 git add .
 read -p "commit: " msg
 git commit -m "$msg"
-git push -u origin "$(git branch --show-current)"
+git push origin "$(git branch --show-current)" --force
