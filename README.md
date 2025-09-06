@@ -1,4 +1,4 @@
-![FastPush Logo](assets/logo.png)
+![FastPush Logo](assets/fastpush.png)
 
 
 أداة بسيطة لتسهيل عمليات **git commit** و **git push** بسرعة من خلال سطر الأوامر.
