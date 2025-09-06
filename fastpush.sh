@@ -27,7 +27,7 @@ if [ ! -d .git ]; then
   echo "fill not connected to repo "
   git init
 
-  read -p "type username/repo" repo
+  read -p "username/repo: " repo
   git remote add origin "https://github.com/$repo/"
 
   read -p "branch: " branch
