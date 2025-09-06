@@ -34,3 +34,4 @@ git add . >/dev/null 2>&1
 read -p "commit: " msg
 git commit -m "$msg" >/dev/null 2>&1
 git push origin "$(git branch --show-current)" --force >/dev/null 2>&1
+echo "done"
